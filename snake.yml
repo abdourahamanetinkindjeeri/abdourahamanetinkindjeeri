@@ -1,0 +1,36 @@
+name: Générer le serpent
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # tous les jours à minuit UTC
+  workflow_dispatch:       # lancement manuel (onglet Actions)
+  push:
+    branches: [main, master]
+
+permissions:
+  contents: write
+
+jobs:
+  snake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkoutv7
+
+      - name: Générer les SVG du serpent
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            snake.svg?color_snake=D9A800&color_dots=#EBEDF0,#B7F0D4,#6EDCAA,#00C48C,#00875F
+            snake-dark.svg?color_snake=FCD116&color_dots=#161B22,#0B3D2E,#0F6B4E,#00A676,#00E0A1
+
+      - name: Enregistrer si modifié
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add snake.svg snake-dark.svg
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: mise à jour du serpent"
+            git push
+          fi
