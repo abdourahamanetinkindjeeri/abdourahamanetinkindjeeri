@@ -1,55 +1,76 @@
+# Abdourahamane DIALLO — JeeriDev
+
 <div align="center">
 
-<img src="hero.svg" alt="Abdourahamane DIALLO, développeur Full-Stack Web et Mobile, JeeriDev. Parcours : Guinée, Sénégal, Nouveau-Brunswick." width="100%" />
+<img src="hero.svg" alt="Abdourahamane DIALLO, développeur Full-Stack Web et Mobile, JeeriDev." width="100%" />
 
-<img src="stack.svg" alt="Stack : Java, Spring Boot, Spring Modulith, PostgreSQL, Flutter, GetX, React, TypeScript, Tailwind, NestJS, Docker, GitHub Actions, LaTeX" width="100%" />
+<img src="stack.svg" alt="Stack technique : Java, Spring Boot, PostgreSQL, Flutter, React, TypeScript, NestJS, Docker et GitHub Actions." width="100%" />
 
-**[LinkedIn](https://www.linkedin.com/in/abdourahamane-diallo-3075b428a)** · Ouvert aux opportunités de développeur Full-Stack junior · Nouveau-Brunswick, Canada
+**[LinkedIn](https://www.linkedin.com/in/abdourahamane-diallo-3075b428a)** · Ouvert aux opportunités en développement Full-Stack junior · Nouveau-Brunswick, Canada
 
 </div>
 
 ## À propos
 
-Originaire de Guinée, formé au Sénégal, installé au Nouveau-Brunswick. Je conçois des backends **Spring Boot** en architecture hexagonale, des applications mobiles **Flutter** et des interfaces **React + TypeScript**. Je travaille sous la marque **JeeriDev** et je vise le métier d'**architecte logiciel**.
+Développeur logiciel basé au Nouveau-Brunswick, je conçois des solutions backend avec **Java et Spring Boot**, en m'appuyant sur l'architecture hexagonale, le DDD et les principes SOLID. Je développe également des applications mobiles avec **Flutter** et des interfaces web modernes avec **React et TypeScript**.
 
-- **Formation** : École du Code Sonatel Academy × Orange Digital Center (Dakar, promotion 7, 2024–2025). Premières lignes de code à l'Université Assane Seck de Ziguinchor.
-- **Études** : Techniques multidisciplinaires en systèmes informatiques, CCNB, depuis septembre 2026.
-- **J'approfondis** : NestJS (microservices), TDD, patterns d'architecture et d'intégration. Je documente en LaTeX / Beamer.
-- **Hors code** : l'architecture du bâtiment. J'explore des concepts de villas modernes adaptées au climat ouest-africain.
+À travers **JeeriDev**, je développe une approche de l'ingénierie logicielle axée sur la qualité du code, la maintenabilité, la modularité et la conception de systèmes évolutifs.
+
+Mon ambition professionnelle est d'évoluer vers le métier d'**architecte logiciel**, en approfondissant la conception de systèmes distribués, les architectures modulaires et les pratiques d'ingénierie logicielle.
+
+- **Formation professionnelle** : Sonatel Academy × Orange Digital Center, École du Code, promotion 7 (2024–2025).
+- **Formation académique** : Techniques multidisciplinaires en systèmes informatiques, CCNB, depuis septembre 2026.
+- **En cours d'approfondissement** : NestJS, microservices, TDD, patterns de conception et d'intégration, CI/CD.
+- **Documentation technique** : LaTeX et Beamer.
+- **Centres d'intérêt** : architecture logicielle, systèmes distribués et architecture du bâtiment.
 
 ## Architecture de référence
 
-<img src="hexagonal.svg" alt="Schéma d'architecture hexagonale : API REST, application mobile et web à gauche, domaine au centre, base de données et événements à droite" width="100%" />
+<img src="hexagonal.svg" alt="Architecture hexagonale : API REST, applications mobiles et web, domaine, persistance et événements." width="100%" />
 
-C'est le schéma que j'applique sur mes backends : SOLID et DDD dans le domaine, Spring Modulith pour les frontières de modules, multi-tenance PostgreSQL par `tenant_id`, GetX Clean Architecture côté Flutter, Git Flow et CI/CD avec GitHub Actions, SonarCloud et Dokploy.
+Mon approche de conception repose sur les principes suivants :
+
+- **Architecture backend** : architecture hexagonale, DDD, SOLID et séparation des responsabilités.
+- **Modularité** : Spring Modulith et délimitation explicite des modules métier.
+- **Persistance** : PostgreSQL, Flyway et stratégie multi-tenant.
+- **Mobile** : Flutter, GetX et Clean Architecture.
+- **Qualité** : TDD, tests automatisés et SonarCloud.
+- **Industrialisation** : Git Flow, GitHub Actions, Docker et Dokploy.
 
 ## Projets
 
-| Projet | Ce que c'est | Stack |
+| Projet | Description | Technologies |
 |---|---|---|
-| **Mobile Money : plateforme de grossistes et app terrain** | Projet de fin de formation, soutenu : plateforme multi-tenant de gestion de grossistes Mobile Money (paiements récurrents planifiés, import massif Excel/CSV, quotas par tenant). **uv_distrib** : application de gestion d'agents de terrain pour les opérations Mobile Money. | Java · Spring Boot · Spring Modulith · PostgreSQL · Flyway · Flutter · GetX |
-| **ASC SONATEL : plateforme numérique** | Plateforme de l'association sportive et culturelle : site principal responsive (membres, sport, escouades, contenu éditorial, boutique, chatbot) et application Next.js séparée, « Leuk & les Petits Sages », pour les activités culturelles des enfants. Conception UML complète (22 cas d'usage, 10 entités), déploiement sur VPS prévu. | Next.js · React · Node.js · PostgreSQL · Dokploy · GitHub Actions |
-| **[Sentinelle](https://sentinelle.tinkin.tech/)** | Signalement anonyme du racisme et des discriminations au Nouveau-Brunswick : parcours en 3 étapes pensé mobile d'abord, tableaux de bord pour le personnel. Frontend en ligne,Backend avec la DDD + l'architecture modulaire. | React · TypeScript · Vite · Tailwind · shadcn/ui · react-i18next · Vitest |
-| **MarketFlow** | Interface SaaS de gestion de supermarché, avec une page de connexion animée en canvas (particules et constellations). Backend NestJS . | React · TypeScript · Vite · Tailwind · shadcn/ui |
-| **Gestion de poulailler** | Application mobile de gestion de ferme avicole : modules par rôle (Fermier, Distributeur, Propriétaire), factures PDF, scan de codes QR. | Flutter · GetX |
+| **Mobile Money – Gestion de grossistes** | Plateforme multi-tenant de gestion de grossistes Mobile Money : paiements récurrents planifiés, import massif Excel/CSV et gestion des quotas par tenant. Projet de fin de formation soutenu. | Java · Spring Boot · Spring Modulith · PostgreSQL · Flyway |
+| **uv_distrib** | Application mobile de gestion des agents de terrain et des opérations Mobile Money. | Flutter · GetX |
+| **ASC SONATEL** | Plateforme numérique pour une association sportive et culturelle : gestion des membres, sports, escouades, contenus éditoriaux, boutique et chatbot. Comprend également une application Next.js dédiée aux activités culturelles des enfants. | Next.js · React · Node.js · PostgreSQL · Dokploy · GitHub Actions |
+| **[Sentinelle](https://sentinelle.tinkin.tech/)** | Plateforme de signalement anonyme du racisme et des discriminations au Nouveau-Brunswick. Parcours mobile-first en trois étapes et tableaux de bord destinés au personnel. Frontend en ligne, backend en cours de développement avec DDD et architecture modulaire. | React · TypeScript · Vite · Tailwind CSS · shadcn/ui · react-i18next · Vitest |
+| **MarketFlow** | Interface SaaS de gestion de supermarché, avec une expérience de connexion animée en Canvas. Backend développé avec NestJS. | React · TypeScript · Vite · Tailwind CSS · shadcn/ui · NestJS |
+| **Gestion de poulailler** | Application mobile de gestion d'une exploitation avicole : gestion par rôles (fermier, distributeur, propriétaire), facturation PDF et lecture de codes QR. | Flutter · GetX |
 
-<!-- Ligne prête pour Site L2I : colle-la dans le tableau ci-dessus, juste avant la ligne de la gestion de poulailler, après avoir remplacé les trois champs.
-| **Site L2I** | DESCRIPTION EN 1 À 2 PHRASES (ce que fait le site, pour qui, ton rôle) | STACK |
+<!--
+À compléter après validation :
+| **Site L2I** | Description du projet, fonctionnalités principales et contribution personnelle. | Technologies utilisées |
 -->
 
-## Activité
+## Activité GitHub
 
 <div align="center">
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="snake-dark.svg" />
   <source media="(prefers-color-scheme: light)" srcset="snake.svg" />
-  <img alt="Serpent animé qui mange mes contributions GitHub" src="snake.svg" width="100%" />
+  <img alt="Animation des contributions GitHub" src="snake.svg" width="100%" />
 </picture>
+
 </div>
 
-<details>
-<summary>English summary</summary>
+## English summary
 
-**Full-stack web & mobile developer** from Guinea, trained in Senegal, now studying and living in New Brunswick, Canada. I build backends with **Spring Boot** (hexagonal architecture, DDD, modular monolith), mobile apps with **Flutter**, and web apps with **React + TypeScript**. Goal: become a **software architect**. Open to junior full-stack opportunities. My English is a work in progress, and I'm actively improving it.
+**Full-Stack Web & Mobile Developer** based in New Brunswick, Canada. I design backend systems with **Java and Spring Boot**, focusing on Hexagonal Architecture, Domain-Driven Design (DDD), and modular software design. I also build mobile applications with **Flutter** and modern web interfaces with **React and TypeScript**.
 
-</details>
+Through **JeeriDev**, I focus on software quality, maintainability, modularity, and scalable system design.
+
+My long-term career objective is to become a **Software Architect**. I am currently strengthening my skills in distributed systems, software architecture, automated testing, and DevOps practices.
+
+**Open to junior Full-Stack Developer opportunities.**
